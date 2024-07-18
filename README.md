@@ -1,1 +1,1 @@
-# Repositório feito para compartilhar alguns projetos variados em python.
+# Repositório feito para compartilhar alguns projetos feitos em python.
