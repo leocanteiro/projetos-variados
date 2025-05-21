@@ -21,7 +21,7 @@ def rename_pdf(pdf_path, new_name):
 
     counter = 1
     while os.path.exists(new_pdf_path):
-        print(f"File '{new_pdf_path}' already exists. Trying a different name.")
+        print(f"Arquivo '{new_pdf_path}' já existente. Tentando um nome diferente.")
         new_pdf_path = os.path.join(pdf_dir, f"{new_name}_{counter}.pdf")
         counter += 1
 
@@ -41,9 +41,9 @@ if pdf_paths:
         if first_line:
             rename_pdf(pdf_path, first_line)
         else:
-            print("No text found in the PDF file.")
-            # You can add additional logic here to handle the case where no text is found
+            print("Sem texto no PDF selecionado.")
+            
 else:
-    print("No PDF files selected.")
+    print("Sem arquivos PDFs selecionados.")
 
 root.destroy()
